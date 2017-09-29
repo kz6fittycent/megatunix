@@ -34,9 +34,10 @@ parts:
       - flex
       - bison
       - libgtkgl2.0-dev
-
+    
+    # need proper scriplet here. Perhaps a bash script.
     install: |      
       sudo make install
       sudo ldconfig
-      # need proper scriplet here. Perhaps a bash script.
+     
       
