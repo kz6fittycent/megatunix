@@ -38,4 +38,5 @@ parts:
     install: |      
       sudo make install
       sudo ldconfig
+      # need proper scriplet here. Perhaps a bash script.
       
