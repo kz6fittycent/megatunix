@@ -36,7 +36,8 @@ parts:
       - libgtkgl2.0-dev
     
     # need proper scriplet here. Perhaps a bash script.
-    install: |      
+    install: |  
+      cd bin
       sudo make install
       sudo ldconfig
      
