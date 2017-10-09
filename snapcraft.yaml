@@ -34,7 +34,6 @@ parts:
       - flex
       - bison
       - libgtkgl2.0-dev
-      - libgtkgl2.0-1
 
     install: | 
       cd bin     
