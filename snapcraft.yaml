@@ -34,6 +34,9 @@ parts:
       - flex
       - bison
       - libgtkgl2.0-dev
+      
+    stage-packages:
+      - libgtkgl2.0-dev
 
     install: | 
       cd bin     
