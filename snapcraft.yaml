@@ -25,7 +25,9 @@ parts:
     plugin: autotools
     source: https://github.com/djandruczyk/MegaTunix
     source-type: git
-    after: [desktop-gtk2]
+    
+     
+
     build-packages:
       - libgtkglext1
       - libglade2-dev
@@ -34,10 +36,19 @@ parts:
       - flex
       - bison
       - libgtkgl2.0-dev
-      
-  
+
+
+    stage-packages:
+      - libgtkglext1
+      - libglade2-dev
+      - libtool-bin
+      - intltool
+      - flex
+      - bison
+      - libgtkgl2.0-dev
+
     install: | 
       cd bin     
+      sudo make install
       sudo ldconfig
-   
       
