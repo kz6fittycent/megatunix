@@ -35,14 +35,7 @@ parts:
       - bison
       - libgtkgl2.0-dev
       
-    stage-packages:
-      - libgtkgl2.0-1
-      - libc6
-      - libgl1-mesa-glx
-      - libglib2.0-0
-      - libgtk2.0-0
-      - libx11-6
-  prime:
+  
     install: | 
       cd bin     
       sudo make install
