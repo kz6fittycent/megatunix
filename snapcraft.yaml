@@ -47,5 +47,5 @@ parts:
       cd bin     
       sudo make install
       sudo ldconfig
-      ./autogen.sh
+   
       
