@@ -23,7 +23,7 @@ parts:
   my-part:
     # See 'snapcraft plugins'
     plugin: autotools
-    source: https://github.com/kz6fittycent/MegaTunix-1
+    source: https://github.com/djandruczyk/MegaTunix
     source-type: git
     after: [desktop-gtk2]
     build-packages:
