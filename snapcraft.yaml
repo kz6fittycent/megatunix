@@ -29,5 +29,8 @@ parts:
       - bison
       - libgtkgl2.0-dev
       - libglu1-mesa-dev
-
       
+    install: |
+    cd bin
+    make install
+    ldconfig
