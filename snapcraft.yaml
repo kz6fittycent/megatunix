@@ -31,6 +31,6 @@ parts:
       - libglu1-mesa-dev
       
     install: |
-    cd bin
-    make install
-    ldconfig
+      cd bin
+      make install
+      ldconfig
