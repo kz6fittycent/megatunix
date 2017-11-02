@@ -40,7 +40,7 @@ parts:
       - libglu1-mesa-dev
       
     prepare: |
-      ./configure
+      configure
     build: |
       make
     install: |
