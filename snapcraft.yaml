@@ -40,7 +40,7 @@ parts:
       - libglu1-mesa-dev
       
     prepare: |
-      cd $SNAP/.
+      cd $SNAP/
       ./configure
     build: |
       make
