@@ -39,8 +39,7 @@ parts:
       - libgtkgl2.0-dev
       - libglu1-mesa-dev
       
-    prepare: |
-      ./configure --prefix=
+
     build: |
       make
     install: |
