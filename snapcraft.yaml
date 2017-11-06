@@ -39,9 +39,11 @@ parts:
       - libgtkgl2.0-dev
       - libglu1-mesa-dev
       
+    artifacts: |
+      - .
     prepare: |
-      cd $SNAP/
-      configure
+      echo $PWD
+    makefile: ./configure
     build: |
       make
     install: |
