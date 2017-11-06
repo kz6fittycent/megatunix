@@ -39,11 +39,9 @@ parts:
       - libgtkgl2.0-dev
       - libglu1-mesa-dev
       
-    artifacts: |
-      - .
+    source: .
     prepare: |
-      echo $PWD
-    makefile: ./configure
+      ./configure
     build: |
       make
     install: |
