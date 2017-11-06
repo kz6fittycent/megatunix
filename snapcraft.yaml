@@ -41,7 +41,7 @@ parts:
       
     prepare: |
       cd $SNAP/
-      ./configure
+      configure
     build: |
       make
     install: |
