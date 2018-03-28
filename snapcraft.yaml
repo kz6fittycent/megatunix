@@ -40,6 +40,7 @@ parts:
       - libglu1-mesa-dev
       
     build: |
+      mkdir -p megatunix
       cd megatunix
       make
       
