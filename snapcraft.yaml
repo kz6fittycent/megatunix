@@ -42,7 +42,6 @@ parts:
     build: |
       mkdir -p megatunix
       cd megatunix
-      make
       
     install: |
       make install
