@@ -46,5 +46,4 @@ parts:
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//')"
       
     override-build: | 
-      sh $SNAP/.autogen.sh
       ldconfig
