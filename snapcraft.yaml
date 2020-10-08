@@ -33,8 +33,7 @@ parts:
     source: https://github.com/djandruczyk/MegaTunix
     source-type: git
     after: [desktop-gtk2]
-    configflags:
-      - --prefix=/usr    
+
     build-packages:
       - libgtkglext1
       - libglade2-dev
@@ -48,6 +47,7 @@ parts:
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
-      
-#    override-build: | 
-#      make install
+    
+    override-prime: |
+      make install
+      ldconfig
