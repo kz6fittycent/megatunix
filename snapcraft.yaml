@@ -49,5 +49,4 @@ parts:
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
     
     override-prime: |
-      make install
       ldconfig
