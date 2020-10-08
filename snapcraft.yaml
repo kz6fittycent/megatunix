@@ -48,5 +48,5 @@ parts:
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//')"
       
-    override-build: | 
-      ldconfig
+#    override-build: | 
+#      ldconfig
