@@ -32,7 +32,7 @@ parts:
     source: https://github.com/djandruczyk/MegaTunix
     source-type: git
     after: [desktop-gtk2]
-    autotools-configure-parameters:
+    config-flags:
       - --prefix=/usr
       
     build-packages:
