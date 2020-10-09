@@ -1,5 +1,4 @@
 name: megatunix 
-#version: '0.9.18+git'
 adopt-info: megatunix 
 summary: MegaTunix Tuning software for MegaSquirt EFI Controllers
 description: |
@@ -33,7 +32,9 @@ parts:
     source: https://github.com/djandruczyk/MegaTunix
     source-type: git
     after: [desktop-gtk2]
-
+    autotools-configure-parameters:
+      - --prefix=/usr
+      
     build-packages:
       - libgtkglext1
       - libglade2-dev
