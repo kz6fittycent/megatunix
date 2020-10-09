@@ -32,8 +32,6 @@ parts:
     source: https://github.com/djandruczyk/MegaTunix
     source-type: git
     after: [desktop-gtk2]
-    config-flags:
-      - --prefix=/usr
       
     build-packages:
       - libgtkglext1
@@ -48,3 +46,6 @@ parts:
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
+      
+    override-build: |
+      ./autogen.sh
