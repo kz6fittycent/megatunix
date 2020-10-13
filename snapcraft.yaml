@@ -50,5 +50,3 @@ parts:
     override-build: |
       ./autogen.sh
       make
-      make install
-      ldconfig
