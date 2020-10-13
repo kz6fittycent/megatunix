@@ -49,4 +49,5 @@ parts:
       
     override-build: |
       ./autogen.sh
+      cd /usr/local
       make
