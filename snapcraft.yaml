@@ -28,10 +28,16 @@ apps:
       
 parts:
   megatunix:
-    plugin: autotools
+    plugin: nil
     source: https://github.com/djandruczyk/MegaTunix
     source-type: git
     after: [desktop-gtk2]
+    
+    override-build: |
+      ./autogen.sh
+      cd /usr/local
+      make
+      
       
     build-packages:
       - libgtkglext1
@@ -46,8 +52,3 @@ parts:
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
-      
-    override-build: |
-      ./autogen.sh
-      cd /usr/local
-      make
