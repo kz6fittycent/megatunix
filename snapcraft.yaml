@@ -52,3 +52,13 @@ parts:
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
+      
+    stage-packages:
+      - libgtkglext1
+      - libglade2-dev
+      - libtool-bin
+      - intltool
+      - flex
+      - bison
+      - libgtkgl2.0-dev
+      - libglu1-mesa-dev    
