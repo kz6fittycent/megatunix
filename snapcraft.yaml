@@ -14,7 +14,7 @@ architectures:
 
 apps:
   megatunix:
-    command: desktop-launch usr/local/bin/megatunix
+    command: desktop-launch $SNAP/usr/local/megatunix
 #    desktop: usr/local/share/applications/megatunix.desktop
     plugs:
       - network
