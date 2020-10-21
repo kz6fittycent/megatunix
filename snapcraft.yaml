@@ -28,13 +28,14 @@ apps:
       
 parts:
   megatunix:
-    plugin: nil
+    plugin: autotools
+    configflags:
+      - --prefix=/usr/bin
     source: https://github.com/djandruczyk/MegaTunix
     source-type: git
     after: [desktop-gtk2]
     
     override-build: |
-      ./autogen.sh --prefix=/usr/bin
       make
             
     build-packages:
