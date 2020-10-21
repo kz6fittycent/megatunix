@@ -14,8 +14,8 @@ architectures:
 
 apps:
   megatunix:
-    command: desktop-launch $SNAP/usr/bin/megatunix
-#    desktop: share/applications/megatunix.desktop
+    command: desktop-launch $SNAP/bin/megatunix
+    desktop: share/applications/megatunix.desktop
     plugs:
       - network
       - network-bind
@@ -29,8 +29,6 @@ apps:
 parts:
   megatunix:
     plugin: autotools
-    configflags:
-      - --prefix=/usr/bin
     source: https://github.com/djandruczyk/MegaTunix
     source-type: git
     after: [desktop-gtk2]
