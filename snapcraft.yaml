@@ -14,7 +14,7 @@ architectures:
 
 apps:
   megatunix:
-    command: $SNAP/bin/megatunix
+    command: $SNAP/usr/bin/megatunix
 #    desktop: share/applications/megatunix.desktop
     plugs:
       - network
@@ -34,7 +34,7 @@ parts:
     after: [desktop-gtk2]
     
     override-build: |
-      ./autogen.sh
+      ./autogen.sh --prefix=/usr/bin
       make
             
     build-packages:
