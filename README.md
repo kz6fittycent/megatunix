@@ -1,10 +1,6 @@
 # megatunix
 This is an attempt to create a snap for "Megatunix"
 
-Here is a video of it in operation:
-
-https://www.youtube.com/watch?v=aQHyWLs0wDA
-
 -----------------------------------------------------------------------------------------------------------------------
 
 MegaTunix
